@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+</head>
+<body bgcolor="#d3d3d3">
+    <h2>HTML Forms</h2>
+    <form name = "myForm" action="form.html" onsubmit="return validateForm()">
+    <h3>Registration form</h3>
+    Username : <input type ="text" placeholder ="Your username" name ="uname">
+                <label id = "unameLabel" style="color : red;visibility : hidden;">
+                Username should have a minimum of 6 characters</label>
+                <br><br>
+    Age : <input type = "number" name ="age" required> <br><br>
+
+    Residency : <input type = "radio" name ="residency" value ="resident" checked>
+                Resident
+                <input type = "radio" name ="residency" value ="nonresident" checked>
+                Non-reisdent
+                <br><br>
+    Select accounts : <input type="checkbox" name ="acctype" value = "savings">
+                      Savings
+                      <input type="checkbox" name = "acctype" value = "checking" checked>
+                      Checking
+                      <input type="checkbox" name = "acctype" value ="mmarket">
+                      Money Markey
+    Nationality : <select id="nationality">
+                    <option value="1">Australia</option>
+                    <option value="2">Canada</option>
+                    <option value="3">Germany</option>
+                    <option value="4">India</option>
+                    <option value="5">Kenya</option>
+                    <option value="6" selected>USA</option>
+    </select>
+    <br><br>
+    <input type="submit" name="forms" value="Submit">
+    <input type="reset" name="forms" value="Reset">
+</form>
+<script src="lesson.js"></script>
+</body>

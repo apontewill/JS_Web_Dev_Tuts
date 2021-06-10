@@ -1,0 +1,8 @@
+You will most liekly run into some asynchronously executed code
+when coding in JS. JS is single threaded there are some operations such as API
+calls which are executed in a non-blocking matter. Meaning the program does not
+wait for that call to return before executing the next line of code.
+
+This folder goes over: 
+Promises
+async/await syntax
